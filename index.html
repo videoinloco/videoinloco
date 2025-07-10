@@ -3,63 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Seu Nome ou Marca</title>
+  <title>Video In Loco</title>
   <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #222;
+      --button-color: #111;
+      --button-hover: #444;
+    }
+
     body {
-      background: #f7f7f7;
-      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 40px 20px;
       margin: 0;
     }
+
     img.avatar {
       width: 120px;
       height: 120px;
       border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
+
     h1 {
       margin-bottom: 30px;
-      font-size: 1.8em;
-      color: #333;
+      font-size: 2em;
+      text-align: center;
     }
+
     a.button {
       display: block;
       width: 100%;
-      max-width: 400px;
-      padding: 15px;
-      margin: 8px 0;
+      max-width: 360px;
+      padding: 14px 20px;
+      margin: 10px auto;
       text-decoration: none;
       color: white;
-      background-color: #111;
+      background-color: var(--button-color);
       border-radius: 8px;
       text-align: center;
       font-size: 1.1em;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
+
     a.button:hover {
-      background-color: #333;
+      background-color: var(--button-hover);
     }
+
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
+      margin-top: 60px;
+      font-size: 0.85em;
       color: #888;
     }
   </style>
 </head>
 <body>
-  <!-- Troque a URL abaixo pela URL da sua foto -->
-  <img class="avatar" src="URL_DA_SUA_FOTO" alt="Seu Nome" />
-  <h1>Seu Nome ou Marca</h1>
 
-  <!-- Substitua esses links pelos seus links reais -->
-  <a class="button" href="https://exemplo1.com" target="_blank">Meu Site</a>
-  <a class="button" href="https://instagram.com/seu" target="_blank">Instagram</a>
-  <a class="button" href="https://youtube.com/canal" target="_blank">YouTube</a>
-  <a class="button" href="https://linktr.ee/outro" target="_blank">Outro link</a>
+  <!-- Substitua abaixo pela URL da sua logo ou avatar -->
+  <img class="avatar" src="https://via.placeholder.com/150" alt="Video In Loco" />
+  
+  <h1>Video In Loco</h1>
 
-  <footer>© 2025 Seu Nome</footer>
+  <!-- Substitua os links abaixo pelos seus reais -->
+  <a class="button" href="https://instagram.com/videoinloco" target="_blank">Instagram</a>
+  <a class="button" href="https://youtube.com/@videoinloco" target="_blank">YouTube</a>
+  <a class="button" href="https://wa.me/5588999999999" target="_blank">WhatsApp</a>
+  <a class="button" href="mailto:contato@videoinloco.com.br">E-mail</a>
+
+  <footer>© 2025 Video In Loco</footer>
+
 </body>
 </html>
