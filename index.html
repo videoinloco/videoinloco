@@ -2,82 +2,93 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Video In Loco</title>
   <style>
-    :root {
-      --bg-color: #f4f4f4;
-      --text-color: #222;
-      --button-color: #111;
-      --button-hover: #444;
-    }
-
     body {
-      background: var(--bg-color);
-      color: var(--text-color);
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: url('https://images.ctfassets.net/58b2qalv4cwz/1UGrfdHMXeQhCFymMibM6s/36cb25d1e0a5a3a6df2b0f3e41a38c64/background-blur.webp') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
-      margin: 0;
+      min-height: 100vh;
+      color: #ffffff;
     }
 
-    img.avatar {
-      width: 120px;
-      height: 120px;
+    .container {
+      max-width: 600px;
+      width: 100%;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.65);
+      border-radius: 16px;
+      margin-top: 80px;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      border: 3px solid #ffffff;
+      margin: 0 auto 20px;
+      display: block;
     }
 
     h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      text-align: center;
+      font-size: 15px;
+      color: #ccc;
       margin-bottom: 30px;
-      font-size: 2em;
-      text-align: center;
     }
 
-    a.button {
+    .link {
       display: block;
-      width: 100%;
-      max-width: 360px;
-      padding: 14px 20px;
-      margin: 10px auto;
       text-decoration: none;
-      color: white;
-      background-color: var(--button-color);
+      color: #fff;
+      background-color: #1a1a1a;
+      padding: 14px 20px;
       border-radius: 8px;
+      margin: 10px 0;
+      font-weight: 600;
       text-align: center;
-      font-size: 1.1em;
-      transition: background-color 0.3s ease;
+      border: 1px solid #fff;
+      transition: all 0.3s ease;
     }
 
-    a.button:hover {
-      background-color: var(--button-hover);
+    .link:hover {
+      background-color: #ffffff;
+      color: #000;
     }
 
     footer {
-      margin-top: 60px;
-      font-size: 0.85em;
-      color: #888;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #999;
     }
   </style>
 </head>
 <body>
 
-  <!-- Substitua abaixo pela URL da sua logo ou avatar -->
-  <img class="avatar" src="https://via.placeholder.com/150" alt="Video In Loco" />
-  
-  <h1>Video In Loco</h1>
+  <div class="container">
+    <img class="profile-pic" src="https://d1fdloi71mui9q.cloudfront.net/hbOa0a7dTEi6EkGCx1ep_lC2UXUSqEpTcDLCb" alt="Video In Loco Foto de Perfil" />
 
-  <!-- Substitua os links abaixo pelos seus reais -->
-  <a class="button" href="https://instagram.com/videoinloco" target="_blank">Instagram</a>
-  <a class="button" href="https://youtube.com/@videoinloco" target="_blank">YouTube</a>
-  <a class="button" href="https://wa.me/5588999999999" target="_blank">WhatsApp</a>
-  <a class="button" href="mailto:contato@videoinloco.com.br">E-mail</a>
+    <h1>Video In Loco</h1>
+    <p class="bio">Produções audiovisuais no Cariri 📍</p>
 
-  <footer>© 2025 Video In Loco</footer>
+    <a class="link" href="https://wa.me/message/WBZOWMRSNRUXA1" target="_blank">💬 Orçamento via WhatsApp</a>
+    <a class="link" href="https://www.instagram.com/videoinloco" target="_blank">📸 Instagram</a>
+    <a class="link" href="https://www.behance.net/videoinloco" target="_blank">🎨 Portfólio no Behance</a>
+    <a class="link" href="mailto:videoinloco@gmail.com" target="_blank">✉️ Enviar E-mail</a>
+  </div>
 
 </body>
 </html>
